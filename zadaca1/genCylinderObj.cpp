@@ -57,7 +57,7 @@ void genSideFaces(ofstream & cylinder, int res) {
         if (n3 > res*4) {
             n3 -= res;
         }
-        cylinder << "f " << i + res + 1 << "//" << n1 << " " << i + res*3 << "//" << n2 << " " << i + res*3 + 1 << "//" << n3 << endl; // this doesn't work properly
+        cylinder << "f " << i + res + 1 << "//" << n1 << " " << i + res*3 << "//" << n2 << " " << i + res*3 + 1 << "//" << n3 << endl;
         cylinder << "f " << i + res*3 << "//" << i + res*3 << " " << i + res << "//" << i + res << " " << i + res + 1 << "//" << i + res + 1 << endl;
     }
     cylinder << "f " << res + 1 << "//" << res + 1 << " " << res*3 + 1 << "//" << res*3 + 1 << " " << res*4 << "//" << res*4 << endl;
