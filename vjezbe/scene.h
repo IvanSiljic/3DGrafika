@@ -17,7 +17,7 @@ class Scene {
 
         for (auto obj : objects) {
             if (obj->rayIntersect(ray, t, normal)) {
-                if (t < best_t) {
+                if (t < best_t && t > 0) {
                     best_t = t;
                     hitPoint = ray.origin + ray.direction * t;
                     hitObject = obj;
@@ -32,7 +32,7 @@ class Scene {
 
     bool isLightObscured(const Light* light, Vec3f hitPoint) const {
         Vec3f lightDirection = (light->position - hitPoint).normalize();
-        Vec3f lightOrigin = hitPoint;
+        Vec3f lightOrigin = hitPoint + lightDirection * 0.001;
         Ray lightRay(lightOrigin, lightDirection);
 
         Vec3f recHitPoint;
@@ -42,10 +42,10 @@ class Scene {
         if (!sceneIntersect(lightRay, recHitPoint, recHitNormal, recHitObject))
             return false;
 
-        float lightDist = (hitPoint - light->position).norm();
-        float recHitDist = (recHitPoint - hitPoint).norm();
+        float lightDist = (light->position - hitPoint).norm();
+        float hitDist = (recHitPoint - hitPoint).norm();
 
-        if (recHitDist <= lightDist)
+        if (hitDist >= lightDist)
             return false;
 
         return true;
@@ -58,11 +58,12 @@ class Scene {
 
             Vec3f l = (light->position - hitPoint).normalize();
             float r = (light->position - hitPoint).norm();
+
             float kD = hitObject->material.diffuseCoef;
             float distFactor = light->intensity / (r * r);
             float angle = hitNormal * l;
-
             float L = kD * distFactor * max(0.f, angle);
+
             diff += L;
 
             Vec3f h = (-ray.direction + l).normalize();
