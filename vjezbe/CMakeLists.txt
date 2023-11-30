@@ -9,4 +9,5 @@ include_directories(.)
 add_executable(3DGrafika
         geometry.h
         image.h
-        ray.h)
+        ray.h
+        objects.h)

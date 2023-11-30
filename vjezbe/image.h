@@ -1,6 +1,3 @@
-//
-// Created by isiljic on 11/3/23.
-//
 #pragma once
 #include "vector"
 #include "iostream"
@@ -14,19 +11,19 @@ class Image {
 private:
     vector<Vec3f> pixels;
 public:
-    int width;
-    int height;
+    const int width;
+    const int height;
 
-    Image(int width, int height) : width(width), height(height) {
+    Image(const int width, const int height) : width(width), height(height) {
         pixels = vector<Vec3f>(width * height);
     };
 
     void setPixel(size_t i, size_t j, const Vec3f color) {
-        pixels[(int)i + (int)j*width] = color; // fix i and j iterators
+        pixels[(int)i + (int)j*width] = color;
     };
 
     // save in .ppm format
-    void save(const string path) {
+    void save(const string &path) {
         ofstream img;
         img.open(path, ofstream::binary);
 
