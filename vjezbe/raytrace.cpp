@@ -47,16 +47,20 @@ int main() {
     Material green(Vec3f(0, 1, 0));
     Material blue(Vec3f(0, 0, 1));
     Material grey(Vec3f(0.5, 0.5, 0.5));
+    Material muky(Vec3f(0.7, 0.35, 0.8));
+
 
     Sphere s1(Vec3f(-3, 0, -16), 2, red);
     Sphere s2(Vec3f(-1, -1.5, -12), 2, green);
     Sphere s3(Vec3f(1.5, -0.5, -18), 3, blue);
     Sphere s4(Vec3f(7, 5, -18), 4, grey);
+    Sphere s5(Vec3f(0,0,-20), 5, muky);
 
     scene.addObject(&s1);
     scene.addObject(&s2);
     scene.addObject(&s3);
     scene.addObject(&s4);
+    scene.addObject(&s5);
 
     Light l1(Vec3f(-20, 20, 20), 1500);
     Light l2(Vec3f(20, 30, 20), 1500);

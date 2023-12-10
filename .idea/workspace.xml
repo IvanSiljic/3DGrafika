@@ -20,10 +20,11 @@
   <component name="ChangeListManager">
     <list default="true" id="02518e91-ed87-4028-8167-e9ff4bdef285" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vjezbe/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vjezbe/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vjezbe/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/vjezbe/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vjezbe/image.ppm" beforeDir="false" afterPath="$PROJECT_DIR$/vjezbe/image.ppm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vjezbe/raytrace" beforeDir="false" afterPath="$PROJECT_DIR$/vjezbe/raytrace" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vjezbe/raytrace.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/vjezbe/raytrace.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vjezbe/scene.h" beforeDir="false" afterPath="$PROJECT_DIR$/vjezbe/scene.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +65,7 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;C/C++ File.raytrace.cpp.executor&quot;: &quot;Run&quot;,
     &quot;CMake Debug.Project.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
@@ -79,6 +81,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -98,7 +101,7 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="raytrace.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" WORKING_DIR="file://$PROJECT_DIR$/vjezbe" PASS_PARENT_ENVS_2="true" PROJECT_NAME="3DGrafika" TARGET_NAME="raytrace.cpp" CONFIG_NAME="raytrace.cpp">
+    <configuration name="raytrace.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" WORKING_DIR="file://$PROJECT_DIR$/exec" PASS_PARENT_ENVS_2="true" PROJECT_NAME="3DGrafika" TARGET_NAME="raytrace.cpp" CONFIG_NAME="raytrace.cpp">
       <option name="sourceFile" value="vjezbe/raytrace.cpp" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
@@ -126,7 +129,12 @@
       <workItem from="1699653171271" duration="97000" />
       <workItem from="1700812922924" duration="6433000" />
       <workItem from="1701200151986" duration="15000" />
-      <workItem from="1701367456895" duration="2160000" />
+      <workItem from="1701367456895" duration="2276000" />
+      <workItem from="1701369775693" duration="715000" />
+      <workItem from="1701419237396" duration="226000" />
+      <workItem from="1701888052840" duration="650000" />
+      <workItem from="1702209469658" duration="147000" />
+      <workItem from="1702215423214" duration="2000" />
     </task>
     <servers />
   </component>
@@ -134,10 +142,9 @@
     <option name="version" value="3" />
   </component>
   <component name="VCPKGProject">
-    <isAutomaticEditVcpkgJson value="true" />
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
-    <isAutomaticFoundErrors value="true" />
+    <isAutomaticReloadCMake value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
