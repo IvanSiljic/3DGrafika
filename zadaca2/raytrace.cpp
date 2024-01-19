@@ -5,7 +5,7 @@
 #include "scene.h"
 #include "material.h"
 
-#define bounces 10
+#define bounces 5
 
 using namespace std;
 

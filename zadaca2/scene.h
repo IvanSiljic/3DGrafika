@@ -92,7 +92,7 @@ public:
                 return hitObject->material.diffuseColor * diff + Vec3f(1, 1, 1) * spec;
             } else {
                 // For reflections
-                Vec3f reflDirection = ray.direction - hitNormal * (ray.direction * hitNormal) * 2;
+                Vec3f reflDirection = ray.direction - hitNormal * (ray.direction * hitNormal)*2;
                 reflDirection.norm();
                 Ray reflRay{hitPoint + reflDirection * 0.01, reflDirection};
 
